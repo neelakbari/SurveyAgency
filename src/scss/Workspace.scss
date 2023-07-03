@@ -1,0 +1,81 @@
+.workspace {
+  padding: 100px 200px;
+
+  & .workspace_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .create_form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 180px;
+      height: 180px;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      flex-direction: column;
+      padding: 24px 16px;
+      transition: all 0.2s ease 0s;
+      border-radius: 8px;
+      position: relative;
+      background-color: #0487af;
+      margin: 0 10px;
+
+      & .create_form_name {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      & .create_form_icon img {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08),
+          0 2px 12px rgba(0, 0, 0, 0.06), 0 8px 14px rgba(0, 0, 0, 0.04),
+          0 12px 16px rgba(0, 0, 0, 0.02);
+        border-radius: 50%;
+        display: inline-flex;
+        padding: 8px;
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+}
+
+.form {
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px, rgb(0 0 0 / 6%) 0px 2px 12px;
+  animation: 0.3s ease-in-out 0s 1 normal none running lbWRkT;
+  transition: all 0.2s ease-in 0s;
+  margin: 0 10px;
+  & &_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 118px;
+    padding: 16px;
+    border: 3px solid transparent;
+    cursor: pointer;
+  }
+  &_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 7%) 0px 1px 0px 0px inset;
+    border-radius: 0px 0px 8px 8px;
+    padding: 16px;
+    color: #262627;
+    & .footer_response {
+      cursor: pointer;
+    }
+
+    & .footer_delete {
+      cursor: pointer;
+    }
+  }
+}
