@@ -1,0 +1,156 @@
+.survey_title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.display_container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1110px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(38, 38, 39);
+    border-radius: 8px;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    padding: 25px;
+    overflow: hidden;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &.layout_two{
+        flex-direction: row-reverse;
+    }
+    & .image_wrapper {
+      margin-right: 10px;
+      flex: 0 0 45%;
+      max-width: 45%;
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      &.layout_three{
+        position: relative;
+      img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        scale: 1.1;
+      }
+      }
+    }
+    .display_right{
+        max-width: 45%;
+      flex: 0 0 45%;
+      overflow: hidden;
+    //   overflow-y: scroll;
+      padding-right: 10px;
+
+      &.layout_three{
+        padding-left:20px ;
+      }
+
+      & .right_answer{
+        margin-top: 20px;
+        margin-left: 65px;
+      }
+      & .right_submit{
+        margin-top: 20px;
+        margin-left: 65px;
+        button {
+          font-weight: bold;
+          font-size: 20px;
+          padding: 5px 20px;
+          background: rgb(4, 69, 175);
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          color: #fff;
+          cursor: pointer;
+          &:hover {
+            background: rgb(42, 97, 187);
+          }
+        }
+      }
+      & .right_error {
+        background: #f7e6e6;
+        color: #af0404;
+        padding: 5px 10px;
+        border-radius: 4px;
+        margin-top: 20px;
+        margin-left: 65px;
+        display: flex;
+        align-items: center;
+        width: 70%;
+        .anticon {
+          margin-right: 10px;
+          height: 20px;
+          max-width: 25px;
+          width: 100%;
+          svg {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+    & .submit {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+      flex-direction: column;
+      align-items: flex-end;
+      &_skip {
+        margin-left: 50px;
+        font-weight: normal;
+        font-size: 20px;
+        padding: 4px 10px;
+        background: rgb(4, 69, 175);
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+          background: rgb(42, 97, 187);
+        }
+      }
+      &_changePage {
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+        width: fit-content;
+        .ant-btn {
+          margin-top: 10px;
+          font-weight: bold;
+          font-size: 20px;
+          padding: 5px 15px;
+          background: rgb(4, 69, 175);
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          margin-right: 10px;
+          color: #fff;
+          cursor: pointer;
+          height: 100%;
+          width: 100%;
+          cursor: pointer;
+          .anticon {
+            svg {
+              color: #fff;
+            }
+          }
+          &:hover {
+            background: rgb(42, 97, 187);
+          }
+          &:focus {
+            background: rgb(42, 97, 187);
+          }
+        }
+      }
+    }
+}
