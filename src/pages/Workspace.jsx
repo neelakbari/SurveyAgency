@@ -12,10 +12,12 @@ const Workspace = () => {
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   const dispatch = useDispatch();
   const survey = useSelector((state) => state.survey);
+  console.log(survey)
   let currentUserIndex = survey.findIndex(
     (user) => user.email === currentUser.email
   );
   let data = survey[currentUserIndex].data;
+  console.log(currentUserIndex)
   const addNewSurvey = {
     surveyData: initialData,
     userId: currentUser.email,
